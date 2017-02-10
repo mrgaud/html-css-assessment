@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+
+}
+body{
+  background-image: url('main-bg.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+.navContainer{
+  display: flex;
+  justify-content: space-around;
+}
+.nav{
+  color: white;
+  font-size: 1.5em;
+  font-family: open sans;
+  display: inline-flex;
+}
+.logoContainer{
+  display: none;
+}
+.logo{
+  display: inline-block;;
+  color: white;
+  font-size: 2em;
+}
+ul{
+  list-style: none;
+}
+
+.headerContainer{
+  font-family: open sans;
+  font-weight: bold;
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header{
+  text-align: center;
+  font-size: 5em;
+  color: white;
+}
+.underHeader{
+  text-align: center;
+  color: white;
+}
+.twitter{
+  margin-right:.5em;
+  margin-left: .5em;
+  color: white;
+  float:right;
+}
+.facebook{
+  margin-right:.5em;
+  margin-left: .5em;
+  float: right;
+  color: white;
+}
+
+.footContainer{
+  display: flex;
+  justify-content: center;
+}
+.footDiv{
+}
+.foot{
+  position: absolute;
+  text-align: center;
+  display: block;
+  bottom: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+
+
+@media (max-width:720px){
+  .logoContainer{
+    display: inline-block;
+    width: 100%;
+  }
+  .nav{
+    display: none;
+  }
+}
+@media(min-width:1000px){
+  .header{
+    font-size: 8em;
+  }
+  .underHeader{
+    font-size: 2em;
+  }
+}
