@@ -1,29 +1,57 @@
 *{
   box-sizing: border-box;
-
+  /*border: 1px solid red;*/
+  margin: 0;
 }
 body{
   background-image: url('main-bg.jpeg');
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .navContainer{
+  width: 100%;
+  position: fixed;
+  top: 1em;
+  text-shadow: 1px 1px 1px #000;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;;
 }
 .nav{
+  text-shadow: 1px 1px 1px #000;
   color: white;
   font-size: 1.5em;
   font-family: open sans;
   display: inline-flex;
 }
+/*@keyframes border {
+  to{
+  background-color:#5E89EF;
+  border-radius: 5px;
+  }
+}*/
+.nav:hover{
+  border-bottom:.2em solid #5E89EF;
+  border-radius: 5px;
+  cursor: pointer;
+
+  -webkit-transition: border .5s;
+}
 .logoContainer{
   display: none;
 }
 .logo{
+  text-shadow: 1px 1px 1px #000;
   display: inline-block;;
   color: white;
   font-size: 2em;
+}
+.logo:hover{
+  border-bottom:.2em solid #5E89EF;
+  border-radius: 5px;
+  cursor: pointer;
+
+  -webkit-transition: border .5s;
 }
 ul{
   list-style: none;
@@ -38,56 +66,83 @@ ul{
   justify-content: center;
 }
 .header{
+  text-shadow: 2px 2px 2px #000;
   text-align: center;
   font-size: 5em;
   color: white;
 }
 .underHeader{
+  text-shadow: 1px 1px 1px #000;
+
   text-align: center;
   color: white;
 }
 .twitter{
+  text-shadow: 1px 1px 1px #000;
   margin-right:.5em;
   margin-left: .5em;
   color: white;
   float:right;
 }
+.twitter:hover{
+  border-bottom:.2em solid #5E89EF;
+  border-radius: 5px;
+  cursor: pointer;
+
+  -webkit-transition: border .5s;
+}
 .facebook{
+  text-shadow: 1px 1px 1px #000;
   margin-right:.5em;
   margin-left: .5em;
   float: right;
   color: white;
 }
+.facebook:hover{
+  border-bottom:.2em solid #5E89EF;
+  border-radius: 5px;
+  cursor: pointer;
+
+  -webkit-transition: border .5s;
+}
 
 .footContainer{
+  width: 100%;
+  position: absolute;
+  bottom: 1em;
   display: flex;
   justify-content: center;
 }
 .footDiv{
+  width: 3.2em;
+  height: 3.2em;
+  background: white;
+  border-radius: 50%;
 }
 .foot{
-  position: absolute;
-  text-align: center;
-  display: block;
-  bottom: 0;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  color: white;
-  text-align: center;
+  text-shadow: 0px 0px 0px #ffff;
+  color: #97A2A7;
+  position: static;;
+  font-size: 1.6em;
+  margin-left: .8em;
+  margin-top: .6em;
 }
 
 
 @media (max-width:720px){
   .logoContainer{
-    display: inline-block;
     width: 100%;
+    position: fixed;
+    top: 1em;
+    text-shadow: 1px 1px 1px #000;
+    display: block;
+    justify-content: space-around;;
   }
   .nav{
     display: none;
   }
 }
-@media(min-width:1000px){
+@media (min-width:1050px){
   .header{
     font-size: 8em;
   }
